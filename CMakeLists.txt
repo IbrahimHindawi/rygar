@@ -4,6 +4,9 @@ project(cgfx VERSION 1.0)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 add_executable(${PROJECT_NAME}
     source/main.c
+    source/engine/global.c
+    source/engine/render/render.c
+    source/engine/render/render_init.c
     thirdparty/glad/src/glad.c
 )
 
