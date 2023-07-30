@@ -7,6 +7,8 @@ add_executable(${PROJECT_NAME}
     source/engine/global.c
     source/engine/render/render.c
     source/engine/render/render_init.c
+    source/engine/render/render_utils.c
+    source/engine/io/file.c
     thirdparty/glad/src/glad.c
 )
 
@@ -42,4 +44,4 @@ endif()
 
 add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
                    COMMAND ${CMAKE_COMMAND} -E copy_directory
-                   ${CMAKE_SOURCE_DIR}/resource ${CMAKE_CURRENT_BINARY_DIR}/resource)
+                   ${CMAKE_SOURCE_DIR}/resource ${CMAKE_CURRENT_BINARY_DIR}/Debug/resource)
