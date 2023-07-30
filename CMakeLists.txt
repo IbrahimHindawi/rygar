@@ -6,7 +6,7 @@ add_executable(${PROJECT_NAME}
     source/main.c
     source/engine/global.c
     source/engine/render/render.c
-    source/engine/render/render_init.c
+    source/engine/render/render_internal.c
     source/engine/render/render_utils.c
     source/engine/io/file.c
     thirdparty/glad/src/glad.c
